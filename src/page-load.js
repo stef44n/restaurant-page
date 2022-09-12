@@ -1,3 +1,5 @@
+import './style.css';
+
 const pageLoad = (() => {
     const container = document.getElementById('content')
     

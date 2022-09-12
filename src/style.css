@@ -1,0 +1,29 @@
+* {
+    /* border-bottom: red 1px solid; */
+    margin: 0;
+    padding: 0;
+}
+#content {
+    background-color: springgreen;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header,
+footer,
+main {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.hello {
+   background: url('./chad-montano.jpg');
+}
