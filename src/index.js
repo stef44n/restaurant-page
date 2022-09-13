@@ -2,19 +2,45 @@ import pageLoad from './page-load'
 import homeTab from './page-tabs'
 import './style.css';
 import Image from './chad-montano.jpg'
+import printMe from './print.js';
+import _ from 'lodash';
+
 
 console.log('webpack seems to be working so far..')
 
+function component() {
+    const element = document.createElement('div');
+    const btn = document.createElement('button');
+ 
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+ 
+    btn.innerHTML = 'Click me and check the console!';
+    btn.onclick = printMe;
+ 
+    element.appendChild(btn);
+ 
+    return element;
+}
+
+document.body.appendChild(component());
+
 // pageLoad.body.textContent = 'hello World'
 
-// pageLoad.body.innerHTML = homeTab
+function clearContent() {
+    pageLoad.body.innerHTML = '';
+}
 
-// pageLoad.body.append(homeTab.contnt)
+pageLoad.homeButton.addEventListener('click', () => {
+    clearContent();
+    homeTab();
+})
 
-const element = document.createElement('div');
-element.classList.add('hello');
+pageLoad.menuButton.addEventListener('click', () => {
+    clearContent();
+})
 
-const myIcon = new Image();
-myIcon.src = Image;
+pageLoad.contactButton.addEventListener('click', () => {
+    clearContent();
+})
 
-element.appendChild(myIcon);
+// clearContent()

@@ -1,6 +1,10 @@
 import './style.css';
 
 const pageLoad = (() => {
+    const content = document.createElement('div')
+    content.setAttribute('id', 'content')
+    document.body.append(content)
+
     const container = document.getElementById('content')
     
     const header = document.createElement('header')
