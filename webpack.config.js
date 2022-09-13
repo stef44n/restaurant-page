@@ -11,8 +11,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      // title: 'Output Management',
-      title: 'Development',
+      title: 'Restaurant Page',
     }),
   ],
   output: {

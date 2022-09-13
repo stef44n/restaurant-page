@@ -1,5 +1,5 @@
 import pageLoad from './page-load'
-import homeTab from './page-tabs'
+import {homeTab, menuTab, contactTab} from './page-tabs'
 import './style.css';
 import Image from './chad-montano.jpg'
 import printMe from './print.js';
@@ -30,6 +30,8 @@ function clearContent() {
     pageLoad.body.innerHTML = '';
 }
 
+homeTab();
+
 pageLoad.homeButton.addEventListener('click', () => {
     clearContent();
     homeTab();
@@ -37,10 +39,12 @@ pageLoad.homeButton.addEventListener('click', () => {
 
 pageLoad.menuButton.addEventListener('click', () => {
     clearContent();
+    menuTab();
 })
 
 pageLoad.contactButton.addEventListener('click', () => {
     clearContent();
+    contactTab();
 })
 
 // clearContent()

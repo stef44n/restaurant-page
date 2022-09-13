@@ -3,6 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary: rgb(255, 255, 146);
+    --secondary: hsl(32, 100%, 84%);
+    --accent: orange;
+    --image: url('./chad-montano.jpg');
+}
+
 #content {
     background-color: springgreen;
     height: 100vh;
@@ -14,14 +22,44 @@
 header,
 footer,
 main {
-    background-color: aqua;
+    background-color: var(--primary);
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 main {
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: lightseagreen;
+}
+
+button {
+    padding: 5px 15px;
+    margin: 0 5px;
+}
+
+.cardBackground {
+    background-color: var(--primary);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    margin: 20px 0;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--secondary);
+    width: 40%;
+    padding: 20px;
+    border: double 5px var(--accent);
+    border-radius: 20%;
+    margin: 20px 0;
+}
+
+.heading {
+    width: fit-content;
 }
 
 .hello {
