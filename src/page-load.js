@@ -16,7 +16,7 @@ const pageLoad = (() => {
     container.append(body)
     
     const footer = document.createElement('footer')
-    footer.textContent = 'this is a footer'
+    footer.innerHTML = '&copy; Stefan S. TOP 2022'
     container.append(footer)
     
     const homeButton = document.createElement('button')

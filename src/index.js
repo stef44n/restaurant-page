@@ -8,21 +8,21 @@ import _ from 'lodash';
 
 console.log('webpack seems to be working so far..')
 
-function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
+// function component() {
+//     const element = document.createElement('div');
+//     const btn = document.createElement('button');
  
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
  
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
+//     btn.innerHTML = 'Click me and check the console!';
+//     btn.onclick = printMe;
  
-    element.appendChild(btn);
+//     element.appendChild(btn);
  
-    return element;
-}
+//     return element;
+// }
 
-document.body.appendChild(component());
+// document.body.appendChild(component());
 
 // pageLoad.body.textContent = 'hello World'
 

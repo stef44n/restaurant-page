@@ -29,7 +29,7 @@ main {
 }
 
 main {
-    height: 100vh;
+    height: 100vmax;
     background-color: lightseagreen;
 }
 
