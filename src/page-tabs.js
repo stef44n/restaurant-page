@@ -1,4 +1,7 @@
 import pageLoad from './page-load'
+import Image from './chad-montano.jpg'
+import Image2 from './jeanson-wong.jpg'
+import Image3 from './louis-hansel.jpg'
 
 const homeTab = (() => {
     const content = document.createElement('div')
@@ -16,7 +19,7 @@ const homeTab = (() => {
     content.append(para1)
     
     const para2 = document.createElement('div')
-    para2.innerHTML = '<h3>OPENING hours</h3><p>Mon-Fri 12.00 - 22.00<br> Sat 14-00 - 23.00<br> Sun 14.00 - 23.00</p>'
+    para2.innerHTML = '<h3 align="center">OPENING HOURS</h3><p align="center">Mon-Fri 12.00 - 22.00<br> Sat 14-00 - 23.00<br> Sun 14.00 - 23.00</p>'
     para2.setAttribute('class', 'card')
     content.append(para2)
     
@@ -37,34 +40,49 @@ const menuTab = (() => {
     content.append(heading)
     
     const heading2 = document.createElement('div')
-    heading2.innerText = 'DRINKS'
+    heading2.innerHTML = '<h2>DRINKS</h2>'
     heading2.setAttribute('class', 'card heading')
     content.append(heading2)
 
     const para1 = document.createElement('div')
-    para1.innerText = 'List of drinks and prices\n Soda'
+    para1.innerHTML = '<li>Coca-Cola <li>Pepsi <li>Tango <li>Rubicon <li>Sprite <li>Water <li>Tea <li>Coffee'
     para1.setAttribute('class', 'card')
     content.append(para1)
 
+    const image1 = document.createElement('img')
+    image1.src = Image2
+    image1.setAttribute('class', 'image1')
+    para1.append(image1)
+
     const heading3 = document.createElement('div')
-    heading3.innerText = 'SIDES'
+    heading3.innerHTML = '<h2>SIDES</h2>'
     heading3.setAttribute('class', 'card heading')
     content.append(heading3)
     
     const para2 = document.createElement('div')
-    para2.innerText = 'List of sides and prices\n Hummus\n Fries'
+    para2.innerHTML = '<li>Hummus <li>Fries <li>Rice'
     para2.setAttribute('class', 'card')
     content.append(para2)
 
+    const image2 = document.createElement('img')
+    image2.src = Image3
+    image2.setAttribute('class', 'image2')
+    para1.append(image2)
+
     const heading4 = document.createElement('div')
-    heading4.innerText = 'MAINS'
+    heading4.innerHTML = '<h2>MAINS</h2>'
     heading4.setAttribute('class', 'card heading')
     content.append(heading4)
     
     const para3 = document.createElement('div')
-    para3.innerText = 'List of mains and prices'
+    para3.innerHTML = '<li>Pizza <li>Chicken <li>Pasta <li>Steak <li>Moussaka <li>Seafood'
     para3.setAttribute('class', 'card')
     content.append(para3)
+
+    const image3 = document.createElement('img')
+    image3.src = Image
+    image3.setAttribute('class', 'image3')
+    para3.append(image3)
 });
 
 const contactTab = (() => {

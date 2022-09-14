@@ -65,3 +65,33 @@ button {
 .hello {
    background: url('./chad-montano.jpg');
 }
+
+li {
+    width: 50%;
+}
+
+img {
+    border-radius: 20%;
+}
+
+.image1 {
+    position: absolute;
+    right: 39vmax;
+    top: 370px;
+    height: 150px;
+}
+
+.image2 {
+    position: absolute;
+    right: 42vmax;
+    top: 705px;
+    height: 80px;
+}
+
+.image3 {
+    position: absolute;
+    right: 41vmax;
+    top: 975px;
+    height: 120px;
+    width: 150px;
+}
